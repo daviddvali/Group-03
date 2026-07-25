@@ -6,7 +6,7 @@
         {
             //This is comment from zura
             //This is comment from andria
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Hello, Zura!");
         }
     }
 }
