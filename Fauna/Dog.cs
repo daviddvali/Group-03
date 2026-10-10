@@ -2,7 +2,7 @@
 
 public class Dog : Animal
 {
-    public Dog() : base("Dog")
+    public Dog() : base()
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Dog was created!");

@@ -2,12 +2,12 @@
 
 public class Animal : Creature
 {
-	//public Animal()
-	//{
-	//	Console.ForegroundColor = ConsoleColor.Green;
-	//	Console.WriteLine("Animal was created!");
-	//	Console.ResetColor();
-	//}
+	public Animal()
+	{
+		Console.ForegroundColor = ConsoleColor.Green;
+		Console.WriteLine("Animal was created!");
+		Console.ResetColor();
+	}
 
 	public Animal(string name)
 	{
@@ -25,5 +25,10 @@ public class Animal : Creature
 			return;
         }
 		Console.WriteLine($"Animal with name {Name} is running");
+    }
+
+    protected override void Breath()
+    {
+        Console.WriteLine("Animal is breathing with lungs");
     }
 }
