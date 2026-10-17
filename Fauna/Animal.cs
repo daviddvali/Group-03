@@ -1,6 +1,6 @@
 ﻿namespace Fauna;
 
-public class Animal : Creature
+public /*sealed*/ class Animal : Creature
 {
 	public Animal()
 	{
@@ -27,7 +27,7 @@ public class Animal : Creature
 		Console.WriteLine($"Animal with name {Name} is running");
     }
 
-    protected override void Breath()
+    protected /*sealed*/ override void Breath() 
     {
         Console.WriteLine("Animal is breathing with lungs");
     }

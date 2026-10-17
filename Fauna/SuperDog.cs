@@ -14,8 +14,16 @@ public class SuperDog : Dog
         Console.WriteLine("SuperDog is flying");
     }
 
+    public override void Move()
+    {
+        base.Move();
+        Fly();
+        Console.WriteLine("SuperDog is moving");
+    }
+
     protected override void Breath()
     {
+        base.Breath();
         Console.WriteLine("SuperDog is breathing with lungs");
     }
 }
