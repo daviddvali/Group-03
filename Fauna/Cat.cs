@@ -20,4 +20,9 @@ public class Cat : Animal
     {
         Console.WriteLine("Cat is meowing");
     }
+
+    public override void Move()
+    {
+        Console.WriteLine("Cat is moving");
+    }
 }

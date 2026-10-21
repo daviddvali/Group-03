@@ -16,8 +16,6 @@ public class SuperDog : Dog
 
     public override void Move()
     {
-        base.Move();
-        Fly();
         Console.WriteLine("SuperDog is moving");
     }
 
