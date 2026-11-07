@@ -23,7 +23,24 @@ class Program
 
     static void CallMove(Creature creature)
     {
-        if (creature.Weight > 5)
-            creature.Move();
+        creature.Move();
+
+        if (creature is Dog dog)
+        {
+            dog.Bark();
+            dog.Bark();
+            dog.Bark();
+        }
+
+        //(creature as Dog)?.Bark();
+
+        //if (creature is Dog)
+        //{
+        //    //Dog dog = creature as Dog;
+        //    Dog dog = (Dog)creature;
+        //    dog.Bark();
+        //    dog.Bark();
+        //    dog.Bark();
+        //}
     }
 }
