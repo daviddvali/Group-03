@@ -4,21 +4,30 @@ class Program
 {
     static void Main()
     {
-        Dog dog1 = new Dog() { Weight = 10 };
-        Dog dog2 = new Dog() { Weight = 15 };
-        Dog dog3 = new Dog() { Weight = 25 };
-        SuperDog superDog1 = new SuperDog() { Weight = 30 };
-        Cat cat1 = new Cat() { Weight = 7 };
-        Shark shark1 = new Shark() { Weight = 100 };
+        Creature[] creatures =
+        {
+            new Dog() { Name = "Dog1", Weight = 10 },
+            new Dog() { Name = "Dog2", Weight = 15 },
+            new Dog() { Name = "Dog3", Weight = 25 },
+            new Dog() { Name = "Dog4", Weight = 20 },
+            new Dog() { Name = "Dog5", Weight = 5 },
+            new Bird() { Name = "Bird1", Weight = 1 },
+            new Bee { Name = "Bee1", Weight = 0.1 },
+            new SuperDog() { Name = "SuperDog1", Weight = 30 },
+            new Cat() { Name = "Cat1", Weight = 7 },
+            new Shark() { Name = "Shark1", Weight = 100 }
+        };
 
         Console.Clear();
 
-        CallMove(dog1);
-        CallMove(dog2);
-        CallMove(dog3);
-        CallMove(superDog1);
-        CallMove(cat1);
-        CallMove(shark1);
+        MyArray.Sort(creatures);
+
+        for (int i = 0; i < creatures.Length; i++)
+        {
+            Console.WriteLine(creatures[i]);
+            //CallMove(creatures[i]);
+            Console.WriteLine();
+        }
     }
 
     static void CallMove(Creature creature)
@@ -27,20 +36,9 @@ class Program
 
         if (creature is Dog dog)
         {
-            dog.Bark();
-            dog.Bark();
-            dog.Bark();
+            //dog.Bark();
+            //dog.Bark();
+            //dog.Bark();
         }
-
-        //(creature as Dog)?.Bark();
-
-        //if (creature is Dog)
-        //{
-        //    //Dog dog = creature as Dog;
-        //    Dog dog = (Dog)creature;
-        //    dog.Bark();
-        //    dog.Bark();
-        //    dog.Bark();
-        //}
     }
 }
