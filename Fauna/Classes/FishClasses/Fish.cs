@@ -1,4 +1,6 @@
-﻿namespace Fauna;
+﻿using Fauna.Classes.Base;
+
+namespace Fauna.Classes.FishClasses;
 
 public class Fish : Creature
 {

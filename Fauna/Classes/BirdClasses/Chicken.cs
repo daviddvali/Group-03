@@ -1,4 +1,4 @@
-﻿namespace Fauna;
+﻿namespace Fauna.Classes.BirdClasses;
 
 public class Chicken : Bird
 {

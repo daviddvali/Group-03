@@ -1,4 +1,4 @@
-﻿namespace Fauna;
+﻿namespace Fauna.Classes.AlienClasses;
 
 public class Alf : Alien
 {

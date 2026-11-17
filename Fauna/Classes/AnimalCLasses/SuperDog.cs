@@ -1,4 +1,4 @@
-﻿namespace Fauna;
+﻿namespace Fauna.Classes.AnimalClasses;
 
 public class SuperDog : Dog
 {

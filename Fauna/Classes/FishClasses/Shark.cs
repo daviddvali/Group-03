@@ -1,4 +1,4 @@
-﻿namespace Fauna;
+﻿namespace Fauna.Classes.FishClasses;
 
 public class Shark : Fish
 {

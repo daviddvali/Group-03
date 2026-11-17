@@ -1,4 +1,4 @@
-﻿namespace Fauna;
+﻿namespace Fauna.Classes.AnimalClasses;
 
 public class Dog : Animal
 {
@@ -30,5 +30,10 @@ public class Dog : Animal
     {
         base.Breath();
         Console.WriteLine("Dog is breathing with lungs");
+    }
+
+    public override string ToString()
+    {
+        return $"Dog: {Name}, Weight: {Weight}";
     }
 }

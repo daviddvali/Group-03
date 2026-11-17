@@ -1,4 +1,4 @@
-﻿namespace Fauna;
+﻿namespace Fauna.Classes.InsectClasses;
 
 public class Bee : Insect
 {

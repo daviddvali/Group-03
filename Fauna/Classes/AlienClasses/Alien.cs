@@ -1,4 +1,5 @@
-﻿namespace Fauna;
+﻿using Fauna.Classes.Base;
+namespace Fauna.Classes.AlienClasses;
 
 public abstract class Alien : Creature
 {

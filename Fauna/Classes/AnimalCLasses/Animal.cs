@@ -1,4 +1,5 @@
-﻿namespace Fauna;
+﻿using Fauna.Classes.Base;
+namespace Fauna.Classes.AnimalClasses;
 
 public /*sealed*/ class Animal : Creature
 {
