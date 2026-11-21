@@ -5,7 +5,7 @@
     <TypeIdentifier />
   </Class>
   <Class Name="Fauna.Classes.Base.Creature" Collapsed="true">
-    <Position X="8.25" Y="1.75" Width="1.5" />
+    <Position X="8.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAQAAAAAAAQAICAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Base\Creature.cs</FileName>

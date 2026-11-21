@@ -8,10 +8,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Classes\Car\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\MyArrayHelperLibary\MyArrayHelperLibary.csproj" />
 	</ItemGroup>
 

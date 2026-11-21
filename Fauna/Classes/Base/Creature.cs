@@ -29,7 +29,7 @@ public abstract class Creature : MyComparable
         Creature? otherCreature = item as Creature;
         if (otherCreature == null) throw new ArgumentException("Object is not a Creature");
         if (this.Weight < otherCreature.Weight) return -1;
-        else if (this.Weight > otherCreature.Weight) return 1;
-        else return 0;
+        if (this.Weight > otherCreature.Weight) return 1;
+        return 0;
     }
 }
