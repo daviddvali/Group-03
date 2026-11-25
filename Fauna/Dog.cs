@@ -1,6 +1,6 @@
 ﻿namespace Fauna;
 
-public class Dog : Animal, Comparable
+public class Dog : Animal, IComparable
 {
     public Dog() : base()
     {

@@ -9,7 +9,7 @@ namespace Fauna
             {
                 for (int j = 0; j < array.Length - i - 1; j++)
                 {
-                    if (((Comparable)array[j]).CompareTo(array[j + 1]) > 0)
+                    if (((IComparable)array[j]).CompareTo(array[j + 1]) > 0)
                     {
                         var temp = array[j];
                         array[j] = array[j + 1];

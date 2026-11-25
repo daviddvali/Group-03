@@ -2,7 +2,7 @@
 
 namespace Fauna
 {
-    interface Comparable 
+    interface IComparable 
     {
 
        abstract int CompareTo(object? item);
