@@ -1,6 +1,6 @@
 ﻿namespace Fauna;
 
-public /*sealed*/ class Animal : Creature
+public  /*sealed*/ class Animal : Creature
 {
 	public Animal()
 	{

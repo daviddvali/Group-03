@@ -1,6 +1,6 @@
 ﻿namespace Fauna;
 
-public class Dog : Animal
+public class Dog : Animal, Comparable
 {
     public Dog() : base()
     {
@@ -14,6 +14,18 @@ public class Dog : Animal
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Dog with name {name} was created!");
         Console.ResetColor();
+    }
+
+    public int CompareTo(object? item)
+    {
+        if (item == null) return 1;
+        if (item is Dog dog)
+        {
+            if (this.Weight > dog.Weight) return 1;
+            if (this.Weight < dog.Weight) return -1;
+            return 0;
+        }
+        throw new ArgumentException("Object is not a Dog");
     }
 
     public void Bark()

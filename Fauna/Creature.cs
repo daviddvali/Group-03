@@ -9,10 +9,12 @@ public abstract class Creature
         Console.ResetColor();
         Breath();
     }
+   
 
     public string Name { get; set; }
 
     public double Weight { get; set; }
+    
 
     public virtual void Move() 
     {
